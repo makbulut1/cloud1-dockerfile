@@ -36,5 +36,5 @@ aws --version
 AWS CLI kullanımı için, container'ı çalıştırırken AWS kimlik bilgilerinizi mount etmeniz gerekebilir:
 
 ```bash
-docker run -v ~/.ssh:/root/.ssh -v ~/.aws:/root/.aws .env:/root/.env -it devops-tools
+docker run -v ~/.ssh:/root/.ssh -v ~/.aws:/root/.aws -v .env:/root/.env -it devops-tools
 ``` 
